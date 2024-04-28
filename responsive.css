@@ -1,0 +1,382 @@
+    .healthy-menu-head h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .healthy-menu-head{
+        padding: 80px 0 60px;
+    }/*footer*/
+@media  screen and (max-width:600px) {
+    .footer-row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+       
+    
+    .footer-col:nth-child(1){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-col:nth-child(2){
+        width: 100%;
+
+    }
+    .footer-col:nth-child(3){
+        width: 100%;
+
+    }
+    .footer-col:nth-child(4){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .waves{
+        visibility: hidden;
+    }
+  
+    .footer-logo-opening h1{
+        font-family:  'Dancing Script', cursive;
+        color: #EF993D;
+        text-align: center;
+        font-size: 7vw;
+      
+
+    }
+    .footer-logo-opening{
+        padding-left:0 ;
+    }
+    .footer-social-media{
+        padding-left: 0;
+    }
+    .footer-col .footer-link{
+        margin: 20Px 0;
+       
+       -webkit-columns: 2;
+        columns: 2;
+        -moz-columns: 2;
+    }
+}
+/*healthy menu page */
+@media  screen and (max-width:600px){
+    .quantite-total{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20PX;
+    }
+    .order-button-checkbox{
+        width: 100%;
+    }
+    .home-header{
+        visibility: hidden;
+    }
+    .healthy-menu-head h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .healthy-menu-head{
+        padding: 80px 0 60px;
+    }
+    .page-intro h2{
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+@media  screen and (max-width:600px){
+
+    .why-us .box{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .images-container{
+        display: none;
+    }
+    .home-title{
+    display: block;
+    text-align: center;
+    }
+    .welcome{
+    font-size:32px;
+    }
+    .worldflavors-hub{
+    font-size: 46px;
+    }
+
+    .name-welcome h4{
+    max-width: 90%;
+    font-size: 18px;
+    margin: 15px auto 30px;
+    }
+
+    .buttons {
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    }
+
+    .quote-description .quote {
+    margin-left:0;
+    }
+    .quote-description .quote .what{
+        margin-left: 12px;
+    }
+    .description-parallax{
+        text-align: center;
+    }
+    .parallax-text
+    {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    }
+    
+    .parallax-text .item{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+        
+    }
+    .parallax-image {
+        background-image: url(picture/background.jpeg);
+        min-height: 500px;
+        background-attachment:local; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative
+    }
+    .about-us
+    {
+    display:block;
+    padding: 20px 10px;
+    margin: 0;
+    }
+
+    .about-us .about-paragraphe p
+    {
+    font-size: 17px;
+    line-height: 23px;
+    max-width: 100%;
+    padding: 15px;
+    }
+
+    .about-us .about-paragraphe h3
+    {
+    font-size: 28px;
+    margin-top: 30px;
+    }
+
+    .flex-container
+    {
+    display: block;
+    }
+
+    .why-us
+    {
+    margin:30px;
+    }
+    .why-us span{
+        white-space: nowrap;
+    }
+        
+    
+    }
+
+    /*american menu page */
+    @media  screen and (max-width:600px){
+        .american-menu-head h1{
+            font-size: 45px;
+            text-align: center;
+        }
+        .american-menu-head{
+            padding: 80px 0 60px;
+        }
+        
+        .asian-row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .asian-titre{
+            font-size:20px ;
+        }
+    }
+
+    /*asian menu page */
+    @media  screen and (max-width:600px){
+        .asian-menu-head h1{
+            font-size: 45px;
+            text-align: center;
+        }
+        .asian-menu-head{
+            padding: 80px 0 60px;
+        }
+    }
+    
+    /*italian menu page */
+
+    @media  screen and (max-width:600px){
+        .italian-menu-head h1{
+            font-size: 45px;
+            text-align: center;
+        }
+        .italian-menu-head{
+            padding: 80px 0 60px;
+        }
+    }
+
+
+    /*contact page*/
+    @media  screen and (max-width:600px){
+        .page-head{
+            padding: 80px 0 60px;
+        }
+        .page-head h1{
+            font-size: 45px;
+            text-align: center;
+        }
+        .social-media .ligne{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .social-media .info-item{
+            width: 90%;
+        
+        }
+        .social-media .info-item i{
+            width: 45px;
+            height: 45px;
+            font-size: 20PX;
+        }
+        .ligne-info{
+            display: flex;
+            flex-direction: column;
+        }
+        .opening-time{
+            width: 90%;
+        }
+        .opening h1{
+            font-size: 40PX;
+        }
+        .time h5{
+            font-size: 20PX;
+        }
+        .ligne-info .information input{
+            width: 90%;
+            margin: 0 10PX;
+        }
+        .ligne-info .information textarea{
+            width: 90%;
+            margin: 0 10PX;
+        }
+        #btn{
+            display: flex;
+            align-items: center;
+        }
+        
+    }
+    /*events page*/
+    @media  screen and (max-width:600px){
+        .form-grp input , .form-grp select{
+            width: 90%;
+        }
+        .form-grp{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10Px;
+        }
+        
+        .form-grp .input-group{
+            width: 90%;
+        }
+        .form-grp textarea{
+            width: 90%;
+        }
+        .page-intro h5{
+            font-size: 15PX;
+            width: 90%;
+        }
+        
+    }
+
+    /*FEEDBACK PAGE */
+
+    @media  screen and (max-width:600px){
+        #starbtn{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10PX;
+        }
+    }
+    
+    /*book table */
+    @media  screen and (max-width:600px){
+        .booking-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10Px;
+        }
+        .booking-form input{
+            width: 90%;
+        }
+        .booking-form textarea{
+            width: 90%;
+        }
+        .booking-form .input-group{
+            width: 90%;
+        }
+        svg{
+            height: 10vh;
+            width: 10vh;
+        }
+        .img-tables-container{
+            display: flex;
+            justify-content: center;
+            gap: 30PX;
+        }
+        .booking-form label{
+            margin-left:30px ;
+        }
+    }
+
+    /*gallery page */
+    @media  screen and (max-width:600px){
+
+        .gallery{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .gallery .img-box{
+            width:350px;
+            height: 60px;
+        }
+        .gallery .img-box:hover{
+            height: 300px;
+            width: 95%;
+        }
+        .parallax-gallery{
+            height: 150px;
+
+        }
+        .parallax-gallery::after{
+            background-color: rgba(0,0,0,0.4);
+        }
+        .text{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
