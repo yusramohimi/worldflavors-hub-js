@@ -38,3 +38,49 @@ function cards(selectedCategory, targetId) {
 }
 
 
+//function pour calculer le total prix,calories,protein,carbs des produits selectionnés dans le healthy menu
+
+document.addEventListener("DOMContentLoaded", function() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+    
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            calculeTotals()
+        })
+    })
+    
+    function calculeTotals() {
+        const xhr = new XMLHttpRequest()
+        xhr.open('GET', 'healthy.json', true)
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const ingredientsData = JSON.parse(xhr.responseText)
+                let totalPrix = 0
+                let totalCalories = 0
+                let totalProteines = 0
+                let totalGlucides = 0
+                
+                checkboxes.forEach(function(checkbox) {
+                    if (checkbox.checked) {
+                        const ingredientName = checkbox.getAttribute('data-ingredient');
+                        const ingredientData = ingredientsData.ingredients.find(function(ingredient) {
+                            return ingredient.name === ingredientName;
+                        })
+                        totalPrix += ingredientData.price
+                        totalCalories += ingredientData.calories
+                        totalProteines += ingredientData.protein
+                        totalGlucides += ingredientData.carbs
+                    }
+                })
+                document.getElementById('total-calories').textContent = totalCalories + ' Kcal';
+                document.getElementById('total-protein').textContent = totalProteines + ' g';
+                document.getElementById('total-carbs').textContent = totalGlucides + ' g';
+                document.getElementById('total-price').textContent = totalPrix+ ' DH';
+            }
+            
+        }
+        
+        
+        xhr.send()
+    }
+});

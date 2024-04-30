@@ -1,0 +1,257 @@
+{
+    "ingredients": [
+      {
+        "name": "Green lettuce",
+        "price": 5,
+        "calories": 15,
+        "protein": 1,
+        "carbs": 3
+      },
+      {
+        "name": "Fresh spinach",
+        "price": 7.5,
+        "calories": 10,
+        "protein": 1.2,
+        "carbs": 1.4
+      },
+      {
+        "name": "Quinoa mix",
+        "price": 10,
+        "calories": 50,
+        "protein": 4,
+        "carbs": 9
+      },
+      {
+        "name":"Brown rice",
+        "price": 8,
+        "calories":45,
+        "protein": 1.5,
+        "carbs": 9
+      },
+      {
+        "name":"Cooked lentils",
+        "price": 6,
+        "calories": 70,
+        "protein": 6,
+        "carbs": 20
+      },
+      {
+        "name":"Whole wheat pasta",
+        "price": 7,
+        "calories": 80,
+        "protein": 3,
+        "carbs": 15
+      },
+      {
+        "name":"Cooked bulgur",
+        "price": 7.5,
+        "calories": 80,
+        "protein": 3,
+        "carbs": 18
+      },
+      {
+        "name":"Cooked potatoes",
+        "price": 5,
+        "calories": 70,
+        "protein": 2,
+        "carbs": 17
+      },
+      {
+        "name":"Grilled chicken",
+        "price": 15,
+        "calories": 120,
+        "protein": 25,
+        "carbs": 0
+      },
+      {
+        "name":"Poached salmon",
+        "price": 20,
+        "calories": 150,
+        "protein": 20,
+        "carbs": 0
+      },
+      {
+        "name": "Marinated tofu",
+        "price": 10,
+        "calories": 90,
+        "protein": 8,
+        "carbs": 2
+      },
+      {
+        "name": "Hard-boiled eggs",
+        "price": 7,
+        "calories": 140,
+        "protein": 12,
+        "carbs": 2
+      },
+      {
+        "name": "Grilled shrimp",
+        "price": 25,
+        "calories": 80,
+        "protein": 18,
+        "carbs": 1
+      },
+      {
+        "name": "Beef strips",
+        "price": 18,
+        "calories": 250,
+        "protein": 25,
+        "carbs": 0
+      },
+      {
+        "name": "Turkey breast",
+        "price": 12,
+        "calories": 104,
+        "protein": 29,
+        "carbs": 0
+      },
+      {
+        "name": "Seared tuna",
+        "price": 22,
+        "calories": 110,
+        "protein": 24,
+        "carbs": 0
+      },
+      {
+        "name":"Cherry tomatoes",
+        "price": 5,
+        "calories": 15,
+        "protein": 3,
+        "carbs": 0
+      },
+      {
+        "name":"Cucumbers",
+        "price": 4,
+        "calories": 10,
+        "protein": 0.5,
+        "carbs": 2
+      },
+      {
+        "name":"Colorful bell peppers",
+        "price": 6,
+        "calories": 20,
+        "protein": 2,
+        "carbs": 5
+      },
+      {
+        "name": "Raw broccoli",
+        "price": 5,
+        "calories": 30,
+        "protein": 3,
+        "carbs": 5
+      },
+      {
+        "name": "Grated carrots",
+        "price": 3,
+        "calories": 35,
+        "protein": 1,
+        "carbs": 6
+      },
+      {
+        "name":"Kale",
+        "price": 5,
+        "calories": 30,
+        "protein": 2,
+        "carbs": 6
+      },
+      {
+        "name": "Sliced radishes",
+        "price": 3.5,
+        "calories": 15,
+        "protein": 0.5,
+        "carbs": 3
+      },
+      {
+        "name": "Sliced mushrooms",
+        "price": 5,
+        "calories": 10,
+        "protein": 1,
+        "carbs": 2
+      },
+      {
+        "name": "Avocado",
+        "price": 10,
+        "calories": 80,
+        "protein": 1,
+        "carbs": 9
+      },
+      {
+        "name":"Cashews",
+        "price": 8,
+        "calories": 50,
+        "protein": 2,
+        "carbs": 4
+      },
+      {
+        "name": "Sunflower seeds",
+        "price": 6,
+        "calories": 30,
+        "protein": 2,
+        "carbs": 1
+      },
+      {
+        "name": "Dried cranberries",
+        "price": 5,
+        "calories": 40,
+        "protein": 0.5,
+        "carbs": 10
+      },
+      {
+        "name": "feta cheese",
+        "price": 9,
+        "calories": 60,
+        "protein": 4,
+        "carbs": 1
+      },
+      {
+        "name":"Roasted beets",
+        "price": 7,
+        "calories": 35,
+        "protein": 1,
+        "carbs": 8
+      },
+      {
+        "name": "Diced pineapple",
+        "price": 8,
+        "calories": 20,
+        "protein": 0.5,
+        "carbs": 5
+      },
+      {
+        "name": "Roasted cauliflower",
+        "price": 6,
+        "calories": 25,
+        "protein": 2,
+        "carbs": 8
+      },
+      {
+        "name": "Lemon Olive dressing",
+        "price": 5,
+        "calories": 60,
+        "protein": 0.5,
+        "carbs": 4
+      },
+      {
+        "name":"Greek yogurt dressing",
+        "price": 6,
+        "calories": 40,
+        "protein": 2,
+        "carbs": 3
+      },
+      {
+        "name": "Balsamic dressing",
+        "price": 5.5,
+        "calories": 50,
+        "protein": 1,
+        "carbs": 6
+      },
+      {
+        "name": "Creamy Avo dressing",
+        "price": 5,
+        "calories": 40,
+        "protein": 1,
+        "carbs": 2
+      }
+    ]
+  }
+  
