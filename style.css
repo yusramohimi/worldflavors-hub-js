@@ -792,6 +792,32 @@
     font-family: 'Dancing Script', cursive;
     text-align: center;
 }
+.grp-info{
+    margin-bottom: 20PX;
+}
+
+.company-info-hide{
+    display: none;
+} 
+.form-grp-radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-grp-radio .radio{
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+}
+.form-grp-radio .radio input[type="radio"]:checked + label{
+    color: green;
+    text-shadow:5px 5px 5px #99bea9;
+    font-weight: bold;
+}
+.form-grp-radio .radio input[type="radio"]:checked{
+    accent-color: green;
+}
+
 .form-grp{
     display: flex;
     align-items: center;
@@ -808,7 +834,7 @@
 .form-grp .input-group{
     width: 25vw;
 }
-.form-grp label{
+.form-grp label,.form-grp-radio #type{
     color: black;
     font-family:'Nunito',sans-serif ;
     font-size: 18px;

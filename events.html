@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,13 +70,33 @@
                 <input type="email" id="email" name="email" placeholder="Abc.123@example.com" required>
            </div>
            <div class="form-grp">
-                <label for="" >Phone Number</label>
+                <label for="phone" >Phone Number</label>
                 <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
            </div>
-           <div class="form-grp">
-                <label for="">Company</label>
-                <input type="text" name="company" id="company" placeholder="Company">
+           <div class="form-grp-radio">
+                <label for="type" id="type">Type </label>
+                <div class="radio">
+                    <div class="grp-rd">
+                        <input type="radio" name="type" id="individual" value="individual" checked>
+                        <label for="individual">Individual</label>
+                    </div>
+                    <div class="grp-rd">
+                        <input type="radio" name="type" id="company" value="company">
+                        <label for="company">Company</label>
+                    </div>
+                </div>
            </div>
+           <div id="company-info" class="company-info-hide">
+                <div class="form-grp grp-info">
+                    <label for="company-name">Company Name </label>
+                    <input type="text" name="company-name" id="company-name" placeholder="Company Name">
+                </div>
+                <div class="form-grp">
+                    <label for="tva-number">TVA Number </label>
+                    <input type="text" name="tva-number" id="tva-number" placeholder="TVA Number">
+                </div>
+           </div>
+          
            <h3 class="type-info-titre">YOUR EVENT DETAILS</h3>
            <div class="form-grp">
                 <label for="event-type">Nature of this Event (ex: Birthday Party or Business Dinner...)<span class="required">*</span></label>

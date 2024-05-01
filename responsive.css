@@ -288,14 +288,21 @@
         .form-grp input , .form-grp select{
             width: 90%;
         }
-        .form-grp{
+        .form-grp , .form-grp-radio{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 10Px;
         }
-        
+        .form-grp-radio .radio{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+        .grp-rd{
+            display: flex;
+        }
         .form-grp .input-group{
             width: 90%;
         }

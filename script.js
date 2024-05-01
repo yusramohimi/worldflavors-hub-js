@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
             calculeTotals()
         })
     })
-    
+
     function calculeTotals() {
         const xhr = new XMLHttpRequest()
         xhr.open('GET', 'healthy.json', true)
@@ -84,3 +84,27 @@ document.addEventListener("DOMContentLoaded", function() {
         xhr.send()
     }
 });
+
+
+
+
+// Event page
+
+    // show and hide : si l utilisateur choisit le type "company" , la page affiche deux autres champs : le nom de l entreprise et le numero TVA: 
+    document.addEventListener("DOMContentLoaded", function() {
+        const typeRd = document.getElementsByName("type")
+        const companyInfo = document.getElementById("company-info")
+    
+        for(var i = 0; i < typeRd.length; i++) {
+            typeRd[i].addEventListener("change", function(event) {
+                if(event.target.value === "company") {
+                    // console.log(event.target.value)
+                    companyInfo.style.display = "block"
+                    
+                } else {
+                    companyInfo.style.display = "none"
+                }
+            })
+        }
+    })
+    
