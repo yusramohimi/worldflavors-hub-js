@@ -60,44 +60,48 @@
             <div class="form-grp">
                 <label for="name">First name <span class="required">*</span></label>
                 <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                <span></span>
             </div>
             <div class="form-grp">
                 <label for="name">Last name <span class="required">*</span></label>
                 <input type="text" id="last-name" name="last-name" placeholder="Last name" required> 
+                <span></span>
             </div>
            <div class="form-grp">
                 <label for="email">Email Address <span class="required">*</span></label>
                 <input type="email" id="email" name="email" placeholder="Abc.123@example.com" required>
+                <span></span>
            </div>
            <div class="form-grp">
                 <label for="phone" >Phone Number</label>
                 <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
-           </div>
-           <div class="form-grp-radio">
-                <label for="type" id="type">Type </label>
-                <div class="radio">
-                    <div class="grp-rd">
-                        <input type="radio" name="type" id="individual" value="individual" checked>
-                        <label for="individual">Individual</label>
-                    </div>
-                    <div class="grp-rd">
-                        <input type="radio" name="type" id="company" value="company">
-                        <label for="company">Company</label>
-                    </div>
-                </div>
-           </div>
-           <div id="company-info" class="company-info-hide">
-                <div class="form-grp grp-info">
-                    <label for="company-name">Company Name </label>
-                    <input type="text" name="company-name" id="company-name" placeholder="Company Name">
-                </div>
-                <div class="form-grp">
-                    <label for="tva-number">TVA Number </label>
-                    <input type="text" name="tva-number" id="tva-number" placeholder="TVA Number">
-                </div>
+                <span></span>
            </div>
           
            <h3 class="type-info-titre">YOUR EVENT DETAILS</h3>
+           <div class="form-grp-radio">
+            <label for="type" id="type">Type of this Event </label>
+            <div class="radio">
+                <div class="grp-rd">
+                    <input type="radio" name="type" id="individual" value="individual" checked>
+                    <label for="individual">Individual</label>
+                </div>
+                <div class="grp-rd">
+                    <input type="radio" name="type" id="company" value="company">
+                    <label for="company">Company</label>
+                </div>
+            </div>
+       </div>
+       <div id="company-info" class="company-info-hide">
+            <div class="form-grp grp-info">
+                <label for="company-name">Company Name </label>
+                <input type="text" name="company-name" id="company-name" placeholder="Company Name">
+            </div>
+            <div class="form-grp">
+                <label for="tva-number">TVA Number </label>
+                <input type="text" name="tva-number" id="tva-number" placeholder="TVA Number">
+            </div>
+       </div>
            <div class="form-grp">
                 <label for="event-type">Nature of this Event (ex: Birthday Party or Business Dinner...)<span class="required">*</span></label>
                 <input type="text" name="type" id="type" placeholder="Nature of this Event" required>
@@ -108,6 +112,7 @@
                 <div class="input-group">
                     <div class="input-group-text" id="btnGroupAddon2"><i class="fa-regular fa-calendar-days"></i></div>
                     <input type="date" class="form-control"  aria-label="Input group example" aria-describedby="btnGroupAddon2" required>
+                    <span></span>
                 </div>
            </div>
            <div class="form-grp">
@@ -115,6 +120,7 @@
                 <div class="input-group">
                     <div class="input-group-text" id="btnGroupAddon2"><i class="fa-regular fa-clock"></i></div>
                     <input type="time" class="form-control"  aria-label="Input group example" aria-describedby="btnGroupAddon2" required>
+                    <span></span>
                 </div>
            </div>
            <div class="form-grp">
@@ -122,20 +128,22 @@
                 <div class="input-group">
                     <div class="input-group-text" id="btnGroupAddon2"><i class="fa-regular fa-clock"></i></div>
                     <input type="time" class="form-control"  aria-label="Input group example" aria-describedby="btnGroupAddon2" required>
+                    <span></span>
                 </div>
             </div>
             <div class="form-grp">
                 <label for="nbr-people">Number of People <span class="required">*</span></label>
                 <input type="text" id="nbr-people" name="nbr-people" placeholder="Number of people" required>
+                <span></span>
             </div>
             <div class="form-grp">
                 <label for="informations">Is there any additional information you would like to add ?</label>
                 <textarea name="informations" id="informations" placeholder="Additional information"></textarea>
             </div>
             <div class="form-grp">
-                <label for="">How did you hear about us?</label>
-                <select name="" id="">
-                    <option value="select an option" disabled>Select an option</option>
+                <label for="hear-about">How did you hear about us?</label>
+                <select name="hear-about" id="hear-about">
+                    <option value="select an option" selected disabled>Select an option</option>
                     <option value="instagram">Instagram</option>
                     <option value="facebook">Facebook</option>
                     <option value="twitter">Twitter</option>

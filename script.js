@@ -108,3 +108,46 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
     
+
+// validation des formulaires
+
+    //errorMsg function
+    function errorMsg(input,msg){
+        const form_control = input.parentElement;
+        // console.log(form_control);
+        form_control.className = "error-style"
+        const span = form_control.querySelector('span');
+        // console.log(span);
+        span.innerText=msg
+    }
+    
+    // successMsg function
+    function successMsg(input){
+        const form_control = input.parentElement;
+        form_control.className = "success-style"
+    }
+    // email function
+    function emailCheck(input){
+        const re =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+        if(re.test(input.value.trim())){
+            successMsg(input);
+        }else{
+            errorMsg(input,'Enter a valid Email address')
+        }
+        
+    }
+    
+    // phone number function
+    function phoneNumCheck(input){
+       const phonePatt = /^\+212[5-9][0-9]{8}$/
+
+       if(phonePatt.test(input.value.trim())){
+        successMsg(input);
+       }else{
+        errorMsg(input,'Enter a valid phone number')
+       }
+    }
+
+    
+
