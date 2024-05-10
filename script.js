@@ -113,18 +113,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //errorMsg function
     function errorMsg(input,msg){
-        const form_control = input.parentElement;
-        // console.log(form_control);
-        form_control.className = "error-style"
-        const span = form_control.querySelector('span');
-        // console.log(span);
+        const form_grp = input.parentElement;
+        console.log(form_grp);
+        form_grp.className = "error-style"
+        const span = form_grp.querySelector('span');
+        console.log(span);
         span.innerText=msg
     }
     
     // successMsg function
     function successMsg(input){
-        const form_control = input.parentElement;
-        form_control.className = "success-style"
+        const form_grp = input.parentElement;
+        form_grp.className = "success-style"
     }
     // email function
     function emailCheck(input){
@@ -151,3 +151,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
 
+// event page formulaire 
+const events_form = document.getElementById("events-form");
+const first_name = document.getElementById("first-name");
+const last_name = document.getElementById("last-name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const type_event = document.getElementById("type");
+const nbr_people = document.getElementById("nbr-people");
+
+events_form.addEventListener("submit",function(event){
+    event.preventDefault();
+    // first name
+    if (first_name.value.trim() === ""){
+        // console.log("ok")
+        errorMsg(first_name,"First name is required");
+    }else {
+        // console.log("okk");
+        successMsg(first_name);
+    }
+})

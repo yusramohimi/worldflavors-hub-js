@@ -1679,3 +1679,26 @@ color: black;
     font-family: 'nunito';
     text-shadow: 0 0 20px #16583C;
 }
+
+/* validation des formulaires */
+
+.form-grp.success-style input {
+    border-width: 3px;
+    border-color: green;
+    background-color: rgb(219, 250, 219);
+}
+
+.form-grp.error-style input {
+    background-color: rgb(245, 234, 234);
+    border-width: 3px;
+    border-color: red;
+}
+
+.form-grp span {
+    color: red;
+    visibility: hidden;
+}
+
+.form-grp.error-style span {
+    visibility: visible;
+}
