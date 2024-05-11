@@ -111,21 +111,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // validation des formulaires
 
-    //errorMsg function
+
+    
+
+// declaration
+const events_form = document.getElementById("events-form");
+const submit_button = document.getElementById("submit")
+const first_name = document.getElementById("first-name");
+const last_name = document.getElementById("last-name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const type_event = document.getElementById("type-event");
+const nbr_people = document.getElementById("nbr-people");
+
+// functions
+    // error message function
     function errorMsg(input,msg){
         const form_grp = input.parentElement;
-        console.log(form_grp);
-        form_grp.className = "error-style"
-        const span = form_grp.querySelector('span');
-        console.log(span);
-        span.innerText=msg
+        // console.log(form_grp);
+        form_grp.className = "form-grp error-style"
+        const small = form_grp.querySelector('small');
+        // console.log(small);
+        small.innerText=msg
     }
-    
-    // successMsg function
+
+    // success message function
     function successMsg(input){
         const form_grp = input.parentElement;
-        form_grp.className = "success-style"
+        form_grp.className = "form-grp success-style"
+
     }
+
     // email function
     function emailCheck(input){
         const re =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -149,25 +165,73 @@ document.addEventListener("DOMContentLoaded", function() {
        }
     }
 
-    
+    // check length function
+    function checkLength(input,min,max){
+        if(input.value.length < min){
+            errorMsg(input,`${(input.name)} must be atleast ${min} characters`)
+        } else if (input.value.length > max){
+            errorMsg(input,`${(input.name)} must be less then ${max} characters`)
+        } else {
+            successMsg(input)
+        }   
+}
+
+
+
 
 // event page formulaire 
-const events_form = document.getElementById("events-form");
-const first_name = document.getElementById("first-name");
-const last_name = document.getElementById("last-name");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const type_event = document.getElementById("type");
-const nbr_people = document.getElementById("nbr-people");
-
-events_form.addEventListener("submit",function(event){
+submit_button.addEventListener("click",function(event){
     event.preventDefault();
+
     // first name
     if (first_name.value.trim() === ""){
-        // console.log("ok")
-        errorMsg(first_name,"First name is required");
+        errorMsg(first_name,"First name is required !");
+    }else if (first_name.value.trim() !== ""){
+        checkLength(first_name,4,20)
     }else {
-        // console.log("okk");
         successMsg(first_name);
     }
+
+    // last name
+    if (last_name.value.trim() === ""){
+        errorMsg(last_name,"Last name is required !");
+    }else if (last_name.value.trim() !== ""){
+        checkLength(last_name,4,20)
+    }else {
+        successMsg(last_name);
+    }
+
+    // email
+    if ((email.value.trim() === "")){
+        errorMsg(email,"Email is required !");
+    }else if(email.value.trim() != ""){
+       emailCheck(email)
+    } else{
+        successMsg(email);
+    }
+
+    //phone
+
+    if ((phone.value.trim() === "")){
+        errorMsg(phone,"Phone number is required !");
+    }else if(phone.value.trim() != ""){
+       phoneNumCheck(phone)
+    } else{
+        successMsg(phone);
+    }
+
+    //type of the event
+    if ((type_event.value.trim() === "")){
+        errorMsg(type_event,"Nature of the event is required !");
+    }else {
+        successMsg(type_event);
+    }
+
+
+    //number of people
+    if ((nbr_people.value.trim() === "")){
+        errorMsg(nbr_people,"Number of people is required !");
+    }else {
+        successMsg(nbr_people);
+    }  
 })

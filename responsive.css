@@ -288,6 +288,12 @@
         .form-grp input , .form-grp select{
             width: 90%;
         }
+        .form-grp label,.form-grp-radio #type{
+            width: 90%;
+        }
+        .form-grp .error-msg{
+            width: 90%;
+        }
         .form-grp , .form-grp-radio{
             display: flex;
             flex-direction: column;

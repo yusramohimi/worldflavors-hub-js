@@ -59,23 +59,23 @@
             </div>
             <div class="form-grp">
                 <label for="name">First name <span class="required">*</span></label>
-                <input type="text" id="first-name" name="first-name" placeholder="First name" required>
-                <span></span>
+                <input type="text" id="first-name" name="First name" placeholder="First name" required>
+                <small class="error-msg"></small>
             </div>
             <div class="form-grp">
                 <label for="name">Last name <span class="required">*</span></label>
-                <input type="text" id="last-name" name="last-name" placeholder="Last name" required> 
-                <span></span>
+                <input type="text" id="last-name" name="Last name" placeholder="Last name" required>
+                <small class="error-msg"></small>
+            </div>
+            <div class="form-grp">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="Email" placeholder="Abc.123@example.com" required>
+                <small class="error-msg"></small>
             </div>
            <div class="form-grp">
-                <label for="email">Email Address <span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="Abc.123@example.com" required>
-                <span></span>
-           </div>
-           <div class="form-grp">
                 <label for="phone" >Phone Number <span class="required">*</span></label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
-                <span></span>
+                <input type="tel" name="Phone number" id="phone" placeholder="Phone number" required>
+                <small class="error-msg"></small>
            </div>
           
            <h3 class="type-info-titre">YOUR EVENT DETAILS</h3>
@@ -104,37 +104,34 @@
        </div>
            <div class="form-grp">
                 <label for="event-type">Nature of this Event (ex: Birthday Party or Business Dinner...)<span class="required">*</span></label>
-                <input type="text" name="type" id="type" placeholder="Nature of this Event" required>
-                <span></span>
-           </div>
+                <input type="text" name="type" id="type-event" placeholder="Nature of this Event" required>
+                <small class="error-msg"></small>
+           </div>   
            <div class="form-grp">
                 <label for="date">Event date <span class="required">*</span></label>
                 <div class="input-group">
                     <div class="input-group-text" id="btnGroupAddon2"><i class="fa-regular fa-calendar-days"></i></div>
                     <input type="date" class="form-control"  aria-label="Input group example" aria-describedby="btnGroupAddon2" required>
-                    <span></span>
                 </div>
            </div>
            <div class="form-grp">
                 <label for="start-time">Start Time <span class="required">*</span></label>
                 <div class="input-group">
                     <div class="input-group-text" id="btnGroupAddon2"><i class="fa-regular fa-clock"></i></div>
-                    <input type="time" class="form-control"  aria-label="Input group example" aria-describedby="btnGroupAddon2" required>
-                    <span></span>
+                    <input type="time" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon2" required>
                 </div>
-           </div>
+           </div>  
            <div class="form-grp">
                 <label for="end-time">End Time <span class="required">*</span></label>
                 <div class="input-group">
                     <div class="input-group-text" id="btnGroupAddon2"><i class="fa-regular fa-clock"></i></div>
                     <input type="time" class="form-control"  aria-label="Input group example" aria-describedby="btnGroupAddon2" required>
-                    <span></span>
                 </div>
             </div>
             <div class="form-grp">
                 <label for="nbr-people">Number of People <span class="required">*</span></label>
                 <input type="text" id="nbr-people" name="nbr-people" placeholder="Number of people" required>
-                <span></span>
+                <small class="error-msg"></small>   
             </div>
             <div class="form-grp">
                 <label for="informations">Is there any additional information you would like to add ?</label>
@@ -156,7 +153,8 @@
                 </select>
             </div>
             <div class="form-grp">
-                <button>Submit</button>
+                <button type="submit" class="submit" id="submit">Submit</button>
+                <!-- <input type="submit" id="submit" value="Submit"> -->
             </div>
         </form>
     </div>

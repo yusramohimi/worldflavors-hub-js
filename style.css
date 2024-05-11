@@ -800,6 +800,7 @@
     display: none;
 } 
 .form-grp-radio{
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -820,9 +821,13 @@
 
 .form-grp{
     display: flex;
+    gap: 5PX;
     align-items: center;
     justify-content: center; 
+   flex-direction: column;
 }
+
+
 .form-grp input , .form-grp select{
     width: 25vw;
     height: 50px;
@@ -835,10 +840,11 @@
     width: 25vw;
 }
 .form-grp label,.form-grp-radio #type{
+    margin-top: 15px;
     color: black;
     font-family:'Nunito',sans-serif ;
     font-size: 18px;
-    width: 300px;
+    width: 25vw;
     
 }
 
@@ -850,7 +856,7 @@
     border-radius: 5px;
 }
 
-.form-grp button{
+.submit{
     border:3px solid #EF993D ;
     box-shadow:3px 5px  2px #99BEA9 ;
     border-radius: 20px;
@@ -864,7 +870,7 @@
     margin-top: 30px;
     
 }
-.form-grp button:hover{
+.submit:hover{
     background-color: #EF993D ; 
     color: white;
     box-shadow: 3px 5px 15px 2px #EF993D ,3px 5px 15px 2px #EF993D;
@@ -1682,7 +1688,7 @@ color: black;
 
 /* validation des formulaires */
 
-.form-grp.success-style input {
+/* .form-grp.success-style input {
     border-width: 3px;
     border-color: green;
     background-color: rgb(219, 250, 219);
@@ -1694,11 +1700,32 @@ color: black;
     border-color: red;
 }
 
-.form-grp span {
+.error-msg {
     color: red;
-    visibility: hidden;
+    font-weight: 600;
 }
+ */
 
-.form-grp.error-style span {
-    visibility: visible;
+
+.form-grp.success-style input , .form-grp.success-style select{
+    border-width: 3px;
+    border-color: green;
+    background-color: rgb(219, 250, 219);
+}
+.form-grp.error-style input , .form-grp.error-style select{
+    background-color: rgb(245, 234, 234);
+    border-width: 3px;
+    border-color: red;
+}
+.form-grp .error-msg{
+    width: 25vw;
+    font-weight: 600;
+    color: red;
+    /* visibility: hidden; */
+    display: none;
+
+}
+.form-grp.error-style .error-msg{
+    display: block;
+    /* visibility: visible; */
 }
