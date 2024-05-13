@@ -291,7 +291,7 @@
         .form-grp label,.form-grp-radio #type{
             width: 90%;
         }
-        .form-grp .error-msg{
+        .error-msg{
             width: 90%;
         }
         .form-grp , .form-grp-radio{
@@ -340,6 +340,9 @@
             align-items: center;
             justify-content: center;
             gap: 10Px;
+        }
+        .booking-form label{
+            width: 90%;
         }
         .booking-form input{
             width: 90%;

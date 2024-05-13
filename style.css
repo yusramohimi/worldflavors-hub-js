@@ -1321,13 +1321,15 @@ footer .name i{
     display: flex;
     align-items: center;
     justify-content: center; 
+    flex-direction: column;
+    gap: 5px;
     margin: 20px;
 }
 .booking-form label{
     color: black;
     font-family:'Nunito',sans-serif ;
     font-size: 18px;
-    width: 400px;
+    width: 25vw;
     font-size: 20px;
     
 }
@@ -1688,36 +1690,17 @@ color: black;
 
 /* validation des formulaires */
 
-/* .form-grp.success-style input {
+.success-style input , .success-style select{
     border-width: 3px;
     border-color: green;
     background-color: rgb(219, 250, 219);
 }
-
-.form-grp.error-style input {
+.error-style input , .error-style select{
     background-color: rgb(245, 234, 234);
     border-width: 3px;
     border-color: red;
 }
-
-.error-msg {
-    color: red;
-    font-weight: 600;
-}
- */
-
-
-.form-grp.success-style input , .form-grp.success-style select{
-    border-width: 3px;
-    border-color: green;
-    background-color: rgb(219, 250, 219);
-}
-.form-grp.error-style input , .form-grp.error-style select{
-    background-color: rgb(245, 234, 234);
-    border-width: 3px;
-    border-color: red;
-}
-.form-grp .error-msg{
+.error-msg{
     width: 25vw;
     font-weight: 600;
     color: red;
@@ -1725,7 +1708,7 @@ color: black;
     display: none;
 
 }
-.form-grp.error-style .error-msg{
+.error-style .error-msg{
     display: block;
     /* visibility: visible; */
 }
